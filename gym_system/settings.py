@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'accounts',
     'gyms',
+    'workouts',
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
