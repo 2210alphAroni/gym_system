@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from rest_framework import generics, permissions
+from .models import Branch
+from .serializers import BranchSerializer
+from accounts.permissions import IsSuperAdmin
 
-# Create your views here.
+class BranchListCreateView(generics.ListCreateAPIView):
+    queryset = Branch.objects.all()
+    serializer_class = BranchSerializer
+    permission_classes = [permissions.IsAuthenticated, IsSuperAdmin]
