@@ -25,3 +25,5 @@ env/
 
 # OS
 .DS_Store
+
+nohup.out
