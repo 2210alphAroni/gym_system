@@ -1,0 +1,254 @@
+{
+	"info": {
+		"_postman_id": "3e9a8e92-6ab4-4aac-8fd0-c01f37d93731",
+		"name": "My Collection",
+		"description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "51486792",
+		"_collection_link": "https://nabinuri80-1620410.postman.co/workspace/Md.-Nabinur-Islam-Roni's-Worksp~e411c68a-192b-4ee6-8a07-11a37ed1eaaf/collection/51486792-3e9a8e92-6ab4-4aac-8fd0-c01f37d93731?action=share&source=collection_link&creator=51486792"
+	},
+	"item": [
+		{
+			"name": "Authentication_api",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"SUPER_ADMIN\",\r\n  \"password\": \"admin123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/token/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gyms_branches_api",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4NDk4NzQwLCJpYXQiOjE3Njg0OTUxNDAsImp0aSI6IjZhMDBmYmU5MzgyMjRmYmI4OWFmZjVlYjg3OGU4MDBhIiwidXNlcl9pZCI6IjEifQ.sbAtGHokmOs25Nod2gCf3PSci6Uw9OImi7oqWR7zOvQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/gyms/branches/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"gyms",
+						"branches",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gym_admin_api",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4NDk4NzQwLCJpYXQiOjE3Njg0OTUxNDAsImp0aSI6IjZhMDBmYmU5MzgyMjRmYmI4OWFmZjVlYjg3OGU4MDBhIiwidXNlcl9pZCI6IjEifQ.sbAtGHokmOs25Nod2gCf3PSci6Uw9OImi7oqWR7zOvQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/accounts/me/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"accounts",
+						"me",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gym_users_api",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4NDk4NzQwLCJpYXQiOjE3Njg0OTUxNDAsImp0aSI6IjZhMDBmYmU5MzgyMjRmYmI4OWFmZjVlYjg3OGU4MDBhIiwidXNlcl9pZCI6IjEifQ.sbAtGHokmOs25Nod2gCf3PSci6Uw9OImi7oqWR7zOvQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/accounts/users/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"accounts",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refresh_token_api",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc2ODU4NDM0NywiaWF0IjoxNzY4NDk3OTQ3LCJqdGkiOiJiOTUwNjhlZjNlNjQ0Y2MyOGU5NmE3ZGZlYTFhNDliMiIsInVzZXJfaWQiOiIxIn0.Incx1tmsNzaZuQR1QmXaW0888Ef-rak6Gc2WybSpF4k\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/token/refresh/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						"refresh",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "workouts_plans_api",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4NTAyMTkwLCJpYXQiOjE3Njg0OTg1OTAsImp0aSI6ImQyMWEyOTk4MjU0MzQwMzE4NTEzZGI1ZGU5MTZhMDhmIiwidXNlcl9pZCI6IjMifQ.NI70S1yphAe7uu-tMDLZrb7x8VlrgiNjSQIOZWQleis",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/workouts/plans/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"workouts",
+						"plans",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "trainer_api_token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"rajib\",\r\n  \"password\": \"roni@*P89ac\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/token/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
