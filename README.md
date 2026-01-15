@@ -172,7 +172,7 @@ Member views & updates their own tasks
 
 ⚙️ Project Setup Instructions
 1️⃣ Clone the Repository
-git clone https://github.com/your-username/gym-management-system.git
+git clone https://github.com/2210alphAroni/gym_system
 cd gym-management-system
 
 2️⃣ Create Virtual Environment
